@@ -1,10 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Products from './components/classComponents/Buttonincrement/products';
-import Subscribe from './components/classComponents/youtube/subscribe';
-// import Designation from './components/classComponents/designation';
-// import Products from './components/classComponents/products';
-
+import FetchData from './components/classComponents/axios/fetch1';
+import Data from './components/classComponents/axios/fetch';
+import ProductsApi from './components/classComponents/axios/axios';
 
 
 
@@ -13,11 +11,9 @@ function App() {
   return (
    <div>
     <h1>Hello</h1>
-{/* <Designation/>
-<Products/> */}
-<Products/>
-<Subscribe/>
-
+<Data/>
+<ProductsApi></ProductsApi>
+<FetchData/>
    </div>
   );
 }
