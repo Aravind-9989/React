@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-//  import Img from './components/functionalComponents/jsx/image';
-// import TextComponent from './components/functionalComponents/text/textcomponent';
-import Designed from './components/functionalComponents/jsx/jsx';
-// import Buttons from './components/functionalComponents/props/button';
-// import Profile from './components/functionalComponents/props/profile';
+import ListGroupWithHeaderExample from './components/functionalComponents/bootstrap/cards';
+import Aravind from './components/functionalComponents/bootstrap/carousel';
+import BasicExample from './components/functionalComponents/bootstrap/navbar';
+import ContextualExample from './components/functionalComponents/bootstrap/progressbar';
+import VariantsExample from './components/functionalComponents/bootstrap/spinner';
+import BasicsExample from './components/functionalComponents/bootstrap/toast';
+
 
 
 
@@ -12,11 +14,12 @@ function App() {
   return (
    <div>
     <h1>Hello</h1>
-{/* <Img/>
- <TextComponent/> */}
- <Designed/>
- {/* <Buttons/>
- <Profile/> */}
+<ListGroupWithHeaderExample/>
+<Aravind/>
+<BasicExample/>
+<ContextualExample/>
+<VariantsExample/>
+<BasicsExample/>
    </div>
   );
 }
