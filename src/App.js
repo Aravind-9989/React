@@ -1,20 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/functionalComponents/button/button';
-import Img from './components/functionalComponents/image/image';
-import Lists from './components/functionalComponents/list/ol';
-import Listi from './components/functionalComponents/list/ul';
-import Tables from './components/functionalComponents/table/table';
+ import Img from './components/functionalComponents/jsx/image';
+import TextComponent from './components/functionalComponents/text/textcomponent';
+import Designed from './components/functionalComponents/jsx/jsx';
+import Buttons from './components/functionalComponents/props/button';
+import Profile from './components/functionalComponents/props/profile';
+
+
 
 function App() {
   return (
    <div>
     <h1>Hello</h1>
-<Button/>
 <Img/>
-<Lists/>
-<Listi/>
-<Tables/>
+ <TextComponent/>
+ <Designed/>
+ <Buttons/>
+ <Profile/>
    </div>
   );
 }
