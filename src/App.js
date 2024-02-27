@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import FetchData from './components/classComponents/axios/fetch1';
-import Data from './components/classComponents/axios/fetch';
-import ProductsApi from './components/classComponents/axios/axios';
+import CircleTask from './components/classComponents/circletask/circle';
+import Image from './components/classComponents/carousel/carousel';
+
 
 
 
@@ -11,9 +11,8 @@ function App() {
   return (
    <div>
     <h1>Hello</h1>
-<Data/>
-<ProductsApi></ProductsApi>
-<FetchData/>
+<CircleTask></CircleTask>
+<Image/>
    </div>
   );
 }
