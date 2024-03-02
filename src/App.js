@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Purecomponents from './components/classComponents/purecomponents/parent';
-import Child from './components/classComponents/purecomponents/child';
-// import Unmounting from './components/classComponents/lifecyclemethods/unmounting';
-
+import Controlled from './components/functionalComponents/hooks/Forms/controlled';
+// import Uncontrolled from './components/functionalComponents/hooks/Forms/uncontrolled';
+// import Employe from './components/functionalComponents/hooks/usestate/employee';
+// import UseStateExample3 from './components/functionalComponents/hooks/usestate/usestate3Example';
 
 
 
@@ -12,10 +12,11 @@ import Child from './components/classComponents/purecomponents/child';
 function App() {
   return (
    <div>
-    <h1>Hello</h1>
-{/* <Unmounting/> */}
-<Purecomponents/>q
-<Child/>
+   
+{/* <UseStateExample3/> */}
+{/* <Employe/> */}
+{/* <Uncontrolled/> */}
+<Controlled/>
    </div>
   );
 }

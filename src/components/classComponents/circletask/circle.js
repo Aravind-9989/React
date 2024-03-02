@@ -19,7 +19,9 @@ class CircleTask extends Component{
         this.setState({
             circles: this.state.circles.map((circle, i) => {
                 if (i === index) {
+                    // console.log(circle)
                     return true; 
+                
                 } else {
                     return circle; 
                 }
