@@ -21,22 +21,22 @@ class List extends Component {
     return (
       <>
         <button onClick={this.fetchList}>Get Products</button>
-        <ul>
+        <ol>
           <li>Id</li>
           <li>Title</li>
           <li>Image</li>
           <li>Price</li>
           <li>Count</li>
-        </ul>
+        </ol>
         {this.state.Table.map((eachObject) => {
           return (
-            <ul key={eachObject.id}>
+            <ol key={eachObject.id}>
               <li>{eachObject.id}</li>
               <li>{eachObject.title}</li>
               <li><img src={eachObject.image} alt={eachObject.title} /></li>
               <li>{eachObject.price}</li>
               <li>{eachObject.count}</li>
-            </ul>
+            </ol>
           );
         })}
       </>

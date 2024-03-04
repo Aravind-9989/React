@@ -6,25 +6,36 @@ class Cards extends Component {
   constructor() {
     super();
     this.state = {
-      Cards: [],
+      cards: [],
+      loading: false,
+      error: null,
     };
   }
 
   fetchCards = () => {
+    this.setState({ loading: true, error: null });
     axios
       .get("https://fakestoreapi.com/products")
       .then((res) => {
-        this.setState({ Cards: res.data });
+        this.setState({ cards: res.data, loading: false });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        this.setState({ error: "Failed to fetch data", loading: false });
+        console.error("Error fetching cards:", error);
+      });
   };
 
   render() {
+    const { cards, loading, error } = this.state;
     return (
       <>
-        <button onClick={this.fetchCards}>Fetch cards</button>
+        <button onClick={this.fetchCards} disabled={loading}>
+          Fetch cards
+        </button>
+        {loading && <p>Loading...</p>}
+        {error && <p>Error: {error}</p>}
         <div>
-          {this.state.Cards.map((card) => (
+          {cards.map((card) => (
             <div key={card.id} style={{ width: "18rem", margin: "10px" }}>
               <ListGroup>
                 <ListGroup.Item>{card.title}</ListGroup.Item>
@@ -38,4 +49,5 @@ class Cards extends Component {
     );
   }
 }
+
 export default Cards;

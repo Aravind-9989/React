@@ -1,26 +1,27 @@
-import Spinner from 'react-bootstrap/Spinner';
+import React from 'react';
+import BootstrapSpinner from 'react-bootstrap/Spinner';
 
-function VariantsExample() {
+function MySpinner() {
   return (
-    <>
-      <Spinner animation="border" variant="primary" />
-      <Spinner animation="border" variant="secondary" />
-      <Spinner animation="border" variant="success" />
-      <Spinner animation="border" variant="danger" />
-      <Spinner animation="border" variant="warning" />
-      <Spinner animation="border" variant="info" />
-      <Spinner animation="border" variant="light" />
-      <Spinner animation="border" variant="dark" />
-      <Spinner animation="grow" variant="primary" />
-      <Spinner animation="grow" variant="secondary" />
-      <Spinner animation="grow" variant="success" />
-      <Spinner animation="grow" variant="danger" />
-      <Spinner animation="grow" variant="warning" />
-      <Spinner animation="grow" variant="info" />
-      <Spinner animation="grow" variant="light" />
-      <Spinner animation="grow" variant="dark" />
-    </>
+    <div>
+      <BootstrapSpinner animation="border" variant="primary" />
+      <BootstrapSpinner animation="border" variant="secondary" />
+      <BootstrapSpinner animation="border" variant="success" />
+      <BootstrapSpinner animation="border" variant="danger" />
+      <BootstrapSpinner animation="border" variant="warning" />
+      <BootstrapSpinner animation="border" variant="info" />
+      <BootstrapSpinner animation="border" variant="light" />
+      <BootstrapSpinner animation="border" variant="dark" />
+      <BootstrapSpinner animation="grow" variant="primary" />
+      <BootstrapSpinner animation="grow" variant="secondary" />
+      <BootstrapSpinner animation="grow" variant="success" />
+      <BootstrapSpinner animation="grow" variant="danger" />
+      <BootstrapSpinner animation="grow" variant="warning" />
+      <BootstrapSpinner animation="grow" variant="info" />
+      <BootstrapSpinner animation="grow" variant="light" />
+      <BootstrapSpinner animation="grow" variant="dark" />
+    </div>
   );
 }
 
-export default VariantsExample;
+export default MySpinner;
