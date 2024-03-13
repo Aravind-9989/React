@@ -5,6 +5,9 @@ import Productss from './components/functionalComponents/hooks/use effect/tasks'
 import ProductDetail from './Pages/productdetail';
 
 import Button from './components/Practice/cssstyling';
+import Tablem from './components/MaterialUIintegration/rating';
+
+// import TableM from './components/MaterialUIintegration/table';
 
 // import Card from './components/Practice/card';
 
@@ -18,7 +21,7 @@ function App() {
   return (
    <div>
    
-<Navigation/>
+{/* <Navigation/> */}
 {/* <ProductDetail/> */}
 {/* <Productss/> */}
 {/* <Header/>
@@ -26,6 +29,7 @@ function App() {
 <Food/> */}
 {/* <Card/> */}
 {/* <Button/> */}
+<Tablem/>
    </div>
   );
 }

@@ -1,28 +1,28 @@
-import React, { useCallback, useState } from 'react'
+// import React, { useCallback, useState } from 'react'
 
-function Example() {
-    const [text,SetText]=useState(0)
+// function Example() {
+//     const [text,SetText]=useState(0)
     
-    const handleInputChange=useCallback((event)=>{
-        SetText(event.target.value)
-    },[])
+//     const handleInputChange=useCallback((event)=>{
+//         SetText(event.target.value)
+//     },[])
 
-    const handleReset=useCallback(()=>{
-        SetText('')
-    },[])
+//     const handleReset=useCallback(()=>{
+//         SetText('')
+//     },[])
 
     
-    return (
-    <div>Example
+//     return (
+//     <div>Example
 
-        <p>Text:{text}</p>
-        <input type='text' value={text} onChange={handleInputChange}></input>
-        <button onClick={handleReset}>REset text</button>
+//         <p>Text:{text}</p>
+//         <input type='text' value={text} onChange={handleInputChange}></input>
+//         <button onClick={handleReset}>REset text</button>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Example
+// export default Example
 
 
